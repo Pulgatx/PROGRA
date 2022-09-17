@@ -8,17 +8,18 @@ int main()
 
     return 0;
 }
-
 void forma()
 {
-    int fil=0, esp=0, letra=0;
+    int renglon, cantidad, espacios;
 
-    for(fil=1; fil<=25; fil=fil+1)
+    for (renglon = 1; renglon <= 25; renglon = renglon + 1)
     {
-        for(esp=1;esp<=80-fil;esp=esp+1)
+        for (espacios = 1; espacios <= 79 - renglon + 1; espacios = espacios + 1)
             printf(" ");
-        for(letra=1;letra<=fil;letra=letra+1)
+
+        for (cantidad = 1; cantidad <= renglon; cantidad = cantidad + 1)
             printf("A");
+
         printf("\n");
     }
     return;

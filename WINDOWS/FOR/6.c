@@ -4,10 +4,10 @@ void factorial(int);
 
 int main()
 {
-    int num=0;
+    int num = 0;
     scanf("%i", &num);
 
-    if(num>0)
+    if (num > 0)
         factorial(num);
 
     return 0;
@@ -15,14 +15,14 @@ int main()
 
 void factorial(int num)
 {
-    int mul=1;
+    int mul = 1;
     printf("El factorial de %i es:", num);
 
-    for(int i=num;i>0;i=i-1)
+    for (int i = num; i > 0; i = i - 1)
     {
-            mul=i*mul;   
+        mul = i * mul;
     }
-    printf(" %i\n",mul);
+    printf(" %i\n", mul);
 
     return;
 }
