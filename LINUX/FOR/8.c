@@ -11,14 +11,12 @@ int main()
 
 void par()
 {
-    int j=1;
+    int j=0;
     for(int i=0;i<=9;i=i+1)
     {
+        if(i%2==0)
+            j=j+1;
         printf("%i %i\n", i,j);
-
-        if(i!=0)
-            if(i%2)
-                j=j+1;
     }
     return;
 }
